@@ -3,10 +3,10 @@ conn = sqlite3.connect('airbnb.db')
 cursor = conn.cursor()
 
 import pandas as pd
-neighborhoods_url = "https://raw.githubusercontent.com/jigsawlabs-student/mod-1-sql-curriculum/master/2-sql-relations/3-belongs-to-bnb/neighborhoods.csv"
-hosts_url = "https://raw.githubusercontent.com/jigsawlabs-student/mod-1-sql-curriculum/master/2-sql-relations/3-belongs-to-bnb/hosts.csv"
-locations_url = "https://raw.githubusercontent.com/jigsawlabs-student/mod-1-sql-curriculum/master/2-sql-relations/3-belongs-to-bnb/locations.csv"
-listings_url = "https://raw.githubusercontent.com/jigsawlabs-student/mod-1-sql-curriculum/master/2-sql-relations/3-belongs-to-bnb/listings.csv"
+neighborhoods_url = "https://raw.githubusercontent.com/data-eng-10-21/mod-1-sql-curriculum/master/2-sql-relations/3-belongs-to-bnb/neighborhoods.csv"
+hosts_url = "https://raw.githubusercontent.com/data-eng-10-21/mod-1-sql-curriculum/master/2-sql-relations/3-belongs-to-bnb/hosts.csv"
+locations_url = "https://raw.githubusercontent.com/data-eng-10-21/mod-1-sql-curriculum/master/2-sql-relations/3-belongs-to-bnb/locations.csv"
+listings_url = "https://raw.githubusercontent.com/data-eng-10-21/mod-1-sql-curriculum/master/2-sql-relations/3-belongs-to-bnb/listings.csv"
 
 hosts_df = pd.read_csv(hosts_url)
 neighborhoods_df = pd.read_csv(neighborhoods_url)
